@@ -1,6 +1,5 @@
 import Mcard from "../components/Mcard"
 import { useState } from "react"
-
 function Home(){
     const [searchQuery, setSearchQuery]= useState("");
     const movies= [
