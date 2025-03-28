@@ -1,14 +1,19 @@
 import './App.css'
 import Mcard from './components/Mcard'
+import Favourites from './pages/Favourites'
 import Home from './pages/Home'
+import { Routes, Route } from 'react-router-dom'
 function App() {
 
-  const movNo=1
+  // const movNo=1
 
   return (
-    <>
-    <Home />
-    </>
+    <main>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/Favourites' element={<Favourites />}/>
+      </Routes>
+    </main>
   )
 }
 
